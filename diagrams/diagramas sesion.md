@@ -20,6 +20,7 @@ Describe los roles de los usuarios (Administrador y Encargado de Compras) y sus 
 ## 4️⃣ Flujo Actual de la Cafetería
 **Descripción:**  
 Ilustra el flujo de trabajo actual, manual, de la cafetería, desde que el cliente hace un pedido hasta que se actualiza el inventario y se realizan pedidos a proveedores, mostrando los puntos donde ocurren errores y retrasos.
+
 <img width="409" height="776" alt="image" src="https://github.com/user-attachments/assets/79119e15-1ff2-4859-913c-cb9de04f36c4" />
 
 ## 5️⃣ Flujo Deseado con ERP
