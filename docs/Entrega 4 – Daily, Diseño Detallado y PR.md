@@ -65,31 +65,4 @@ Para cada historia del sprint se crea un diagrama de secuencia que incluya:
 
 ## Ejemplo: Generar Orden de Compra
 
-```plantuml
-@startuml
-title Secuencia: Generar Orden de Compra
-
-actor "Encargado de Compras" as Compras
-participant "Frontend (Blazor)" as UI
-participant "API ASP.NET Core" as API
-participant "Servicio Inventario" as Inventario
-database "SQL Server" as DB
-
-Compras -> UI : Crear nueva orden
-UI -> API : Enviar datos de orden
-API -> Inventario : Validar stock
-Inventario -> DB : Consultar cantidad disponible
-DB --> Inventario : Stock actual
-
-alt Stock suficiente
-    Inventario --> API : OK
-    API -> DB : Guardar orden
-    API --> UI : Orden creada
-    UI --> Compras : Confirmación
-else Stock insuficiente
-    Inventario --> API : Error stock
-    API --> UI : Mostrar mensaje error
-    UI --> Compras : Notificación de fallo
-end
-
-@enduml
+<img width="863" height="613" alt="image" src="https://github.com/user-attachments/assets/44a4fa04-fcc8-46bb-99a4-5f7238c2831b" />
